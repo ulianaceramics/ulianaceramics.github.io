@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color:white;   
+}
+a:hover{
+    color:red;   
+}
+a:active{
+    color:white;   
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: minmax(600px, auto);
+}
+.wrapper>div {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+.header {
+    background: url("img/header-min.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+nav {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(255,255,255,0.3);
+}
+nav h1{
+    font-size: 40px;
+}
+.header ul {
+    display: flex;
+}
+.header li {
+    margin: 0px 20px;
+    list-style-type: none;
+}
+.paralax {
+    background: url("img/paralax-min.jpg")  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+.about {
+    display: flex;
+}
+.about>div{
+    display: flex;
+    width: 50%;
+    padding: 40px 80px;
+    font-size:20px;
+    align-self: center;
+    flex-wrap: wrap;
+}
