@@ -26,7 +26,7 @@ a:active{
     border: 1px solid black;
 }
 .header {
-    background: url("img/header-min.jpg") no-repeat;
+    background: url("../img/header-min.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -50,7 +50,7 @@ nav h1{
     list-style-type: none;
 }
 .paralax {
-    background: url("img/paralax-min.jpg")  no-repeat;
+    background: url("../img/paralax-min.jpg")  no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
