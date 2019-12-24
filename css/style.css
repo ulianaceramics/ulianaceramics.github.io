@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import "./socialbuttons.css" screen;
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Courgette', cursive;
 }
 a {
     text-decoration: none;
 }
+
+/* for all a */
+
 a:link{
     color:white;
 }
@@ -22,14 +29,19 @@ a:active{
     grid-template-rows: minmax(600px, auto);
 }
 .wrapper>div {
-    background-color: cornflowerblue;
-    border: 1px solid black;
+    background-color: white;
 }
 .header {
-    background: url("../../img/header-min.jpg") no-repeat;
+    background: url("../images/header.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    text-shadow: -3px -2px 4px rgba(150, 152, 150, 1);
+}
+.welcome {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 80px;
 }
 nav {
     display: flex;
@@ -38,9 +50,11 @@ nav {
     align-items: center;
     height: 100px;
     background-color: rgba(255,255,255,0.3);
+    font-size: 25px;
 }
 nav h1{
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
 }
 .header ul {
     display: flex;
@@ -50,10 +64,17 @@ nav h1{
     list-style-type: none;
 }
 .paralax {
-    background: url("../../img/paralax-min.jpg")  no-repeat;
+    height: 400px;
+}
+.paralax.one {
+    background: url("../images/paralaxone.jpg")  no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+}
+.paralax.two {
+    background: url("../images/paralaxtwo.jpg")  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .about {
     display: flex;
@@ -65,4 +86,63 @@ nav h1{
     font-size:20px;
     align-self: center;
     flex-wrap: wrap;
+}
+.portfolio {
+    text-align: center;
+    background-color: rgb(69,69,69);
+}
+.portfolio h1 {
+    margin: 30px 0px;
+    font-size:50px;
+}
+.photos {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+    padding: 0px 10px;
+}
+.photos>a>img {
+width: 100%;
+height: auto;
+}
+.contact {
+    padding-top: 20px;
+    text-align: center;
+}
+.contact p {
+    padding-top: 20px;
+    text-align: center;
+}
+.contact-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+}
+form {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+form>button {
+    width: 80px;
+    padding: 10px;
+}
+input {
+    padding: 20px 40px 20px 10px;
+    margin-left: 40px;
+}
+
+/* for social buttons a */
+.contact a:link{
+    color:white;
+}
+.contact a:visited{
+    color:white;   
+}
+.contact a:hover{
+    color:white;   
+}
+.contact a:active{
+    color:white;   
 }
