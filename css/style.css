@@ -141,7 +141,7 @@ form {
     display: flex;
     justify-content: space-evenly;
 }
-form .send {
+form .button {
     width: 120px;
     padding: 10px;
     border: 1px solid none;
@@ -150,7 +150,7 @@ form .send {
     color: white;
     font-size: 15px;
 }
-.send:hover {
+.button:hover {
    transform: scale(1.1);
 }
 
