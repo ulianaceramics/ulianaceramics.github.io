@@ -30,7 +30,7 @@ a:active{
 .wrapper {
     display: grid;
     grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: minmax(100px, 600px);
+    grid-template-rows: minmax(30vw, auto);
 
 }
 /* home button  */
@@ -79,6 +79,7 @@ a.ddott:hover {
     background-attachment: fixed;
     background-position: center center;
     color: white;
+    padding-bottom:20vw;
     /* text-shadow: -3px -2px 4px rgba(150, 152, 150, 1); */
 }
 .welcome {
@@ -93,15 +94,18 @@ a.ddott:hover {
 }
 nav {
     display: flex;
-    padding: 0px 30px;
+    padding: 10px 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     height: 100px;
     background-color: rgba(0,0,0,0.3);
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-bottom: 10%;
 }
 nav h1{
+    margin: 0 auto;
     font-size: 4vw;
     /* font-family: 'Great Vibes', cursive; */
     font-family: 'Montserrat', sans-serif;
@@ -121,9 +125,9 @@ nav h1{
 /* paralax sections  */
 
 .paralax {
-    min-height: 400px;
+    min-height: 30vw;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     transform:translatez(0);
