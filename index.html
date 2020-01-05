@@ -6,25 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>UlyanaCeramics</title>
+        <link rel="Ceramics_site_icon" href="images/logo.ico" type="image/png">
         <link rel="stylesheet" href="css/lightbox.min.css">
         <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+        <div id="up"><a href=".header" class="ddott">Home</a></div>
         <div class="wrapper">
                 <div class="header">
-                        <nav>
+                        <nav id="nav">
                                 <a href="#">
                                         <h1 class="logo">Ulyana Ceramics</h1>
                                 </a>
                                 <ul>
-                                        <a href="#">
+                                        <a href=".about">
                                                 <li>About Me</li>
                                         </a>
-                                        <a href="#">
+                                        <a href=".portfolio">
                                                 <li>Portfolio</li>
                                         </a>
-                                        <a href="#">
+                                        <a href=".contact">
                                                 <li>Contact</li>
                                         </a>
                                 </ul>
@@ -46,7 +48,8 @@
                                 </p>
                         </div>
                 </div>
-                <div class="paralax one"></div>
+                <div class="paralax one">
+                </div>
                 <div class="portfolio">
                         <h1>My Portfolio</h1>
 
@@ -116,12 +119,19 @@
                                 communication or contact me on social networks.</p>
                         <div class="contact-items">
                                 <form action="">
-                                        <input type="text" id="name" placeholder="Name">
-                                        <input type="text" id="lastName" placeholder="Last Name">
-                                        <input type="tel" id="phone" placeholder="Your number">
-                                        <input type="email" id="email" placeholder="Your email">
-                                        <input type="submit" name="submit" class="button" id="submit_btn"
-                                                value="Send" />
+                                        <div class="userInfo">
+                                                <input type="text" id="name" placeholder="Name">
+                                                <input type="text" id="lastName" placeholder="Last Name">
+                                                <input type="tel" id="phone" placeholder="Your number">
+                                                <input type="email" id="email" placeholder="Your email">
+                                        </div>
+                                        <div class="questionSend">
+                                                <textarea name="question" id="userQuestion" cols="80" rows="3"
+                                                        placeholder="Your question"></textarea>
+                                                <input type="submit" name="submit" class="button" id="submit_btn"
+                                                        value="Send" />
+                                        </div>
+
                                 </form>
                                 <div class="social">
                                         <h3>Social</h3>
