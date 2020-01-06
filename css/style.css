@@ -82,15 +82,11 @@ a.ddott:hover {
     padding-bottom:20vw;
     /* text-shadow: -3px -2px 4px rgba(150, 152, 150, 1); */
 }
-.welcome {
-    text-align: center;
-    margin:0 auto;
+.logo {
+    text-align: left;
     padding: 20px;
     font-size: 5vw;
     width: 80%;
-    background-color: rgba(0,0,0,0.4);
-    border: 1px solid azure;
-    border-radius: 90px 90px 90px 90px;
 }
 nav {
     display: flex;
@@ -104,12 +100,7 @@ nav {
     font-size: 2.5vw;
     margin-bottom: 10%;
 }
-nav h1{
-    margin: 0 auto;
-    font-size: 4vw;
-    /* font-family: 'Great Vibes', cursive; */
-    font-family: 'Montserrat', sans-serif;
-}
+
 .header ul {
     display: flex;
 }
