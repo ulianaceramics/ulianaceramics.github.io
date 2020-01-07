@@ -77,11 +77,12 @@ a.ddott:hover {
     background: url("../images/header.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: top;
     color: white;
     padding-bottom:20vw;
     /* text-shadow: -3px -2px 4px rgba(150, 152, 150, 1); */
 }
+
 .logo {
     text-align: left;
     padding: 20px 20px 20px 50px;
@@ -196,23 +197,23 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto);
 }
-form div{
+.form div{
     margin: 50px 0px;
     display: flex;
     flex-wrap: wrap;
 }
-form .userInfo{
+.form .userInfo{
     justify-content: space-around;
 }
-form .questionSend{
+.form .questionSend{
     justify-content: center;
     align-content: center;
 }
-form textarea{
+.form textarea{
     padding: 2vw;
     font-size: 1.5vw;
 }
-form .button {
+.form .button {
     width: 20%;
     height: auto;
     padding: 5px;
@@ -254,18 +255,4 @@ input {
 }
 .footer :nth-child(2) a {
     font-size: 1vw;
-}
-
-/* for footer a */
-.footer a:link{
-    color:white;
-}
-.footer a:visited{
-    color:white;   
-}
-.footer a:hover{
-    color:red;   
-}
-.footer a:active{
-    color:white;   
 }
