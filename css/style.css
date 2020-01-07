@@ -22,7 +22,7 @@ a:visited{
     color:white;   
 }
 a:hover{
-    color:red;   
+    color:white;   
 }
 a:active{
     color:white;   
@@ -30,7 +30,7 @@ a:active{
 .wrapper {
     display: grid;
     grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: minmax(30vw, auto);
+    grid-template-rows: minmax(15vw, auto);
 
 }
 /* home button  */
@@ -75,22 +75,19 @@ a.ddott:hover {
 /* header section  */
 .header {
     background: url("../images/header.jpg") no-repeat;
-    object-fit: cover;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: top;
     color: white;
     padding-bottom:20vw;
     /* text-shadow: -3px -2px 4px rgba(150, 152, 150, 1); */
 }
-.welcome {
-    text-align: center;
-    margin:0 auto;
-    padding: 20px;
+
+.logo {
+    text-align: left;
+    padding: 20px 20px 20px 50px;
     font-size: 5vw;
     width: 80%;
-    background-color: rgba(0,0,0,0.4);
-    border: 1px solid azure;
-    border-radius: 90px 90px 90px 90px;
 }
 nav {
     display: flex;
@@ -100,16 +97,11 @@ nav {
     align-items: center;
     text-align: center;
     height: 100px;
-    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(0,0,0,0.3); */
     font-size: 2.5vw;
     margin-bottom: 10%;
 }
-nav h1{
-    margin: 0 auto;
-    font-size: 4vw;
-    /* font-family: 'Great Vibes', cursive; */
-    font-family: 'Montserrat', sans-serif;
-}
+
 .header ul {
     display: flex;
 }
@@ -142,22 +134,22 @@ nav h1{
 
 /* about section  */
 .about {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 5%;
 }
-.about>div{
+.about>div {
     display: flex;
-    width: 50%;
-    padding: 40px 40px;
     font-size:2vw;
     align-self: center;
     flex-wrap: wrap;
 }
 .about img {
-    width:100%;
+    width:80%;
     height: auto;
 }
 .about h3 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* portfolio section  */
@@ -188,7 +180,7 @@ nav h1{
 .contact {
     padding-top: 20px;
     text-align: center;
-    font-size:1.2vw;
+    font-size:2vw;
 }
 .contact h1 {
     padding-top: 20px;
@@ -197,7 +189,7 @@ nav h1{
     
 }
 .contact p {
-    padding-top: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
 }
 .contact-items {
@@ -205,24 +197,27 @@ nav h1{
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto);
 }
-form div{
+.form div{
     margin: 50px 0px;
     display: flex;
     flex-wrap: wrap;
 }
-form .userInfo{
+.form .userInfo{
     justify-content: space-around;
 }
-form .questionSend{
+.form .questionSend{
     justify-content: center;
+    align-content: center;
 }
-form textarea{
+.form textarea{
     padding: 2vw;
     font-size: 1.5vw;
 }
-form .button {
+.form .button {
     width: 20%;
+    height: auto;
     padding: 5px;
+    margin-left: 30px;
     border: 1px solid none;
     background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
     border-radius: 40px 40px 40px 40px;
@@ -236,36 +231,22 @@ form .button {
 }
 
 input {
-    padding: 2vw 4vw 2vw 1vw;
-    margin-left: 4vw;
+    padding: 2vw 2vw 2vw 1vw;
     margin-top: 2vw;
-}
-
-/* for social buttons a */
-.contact a:link{
-    color:white;
-}
-.contact a:visited{
-    color:white;   
-}
-.contact a:hover{
-    color:white;   
-}
-.contact a:active{
-    color:white;   
+    font-size: 1.5vw;
 }
 
 /* footer */
 .footer {
     text-align: center;
     color:white;
-    font-size: 0.5em;
+    font-size: 1vw;
     background-color: rgb(108,75,30);
     z-index: 1000;
 }
 .footer :nth-child(1) {
     padding: 3px 0px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     /* background-color: rgb(108,75,30); */
 }
 .footer :nth-child(2) {
@@ -274,18 +255,4 @@ input {
 }
 .footer :nth-child(2) a {
     font-size: 1vw;
-}
-
-/* for footer a */
-.footer a:link{
-    color:white;
-}
-.footer a:visited{
-    color:white;   
-}
-.footer a:hover{
-    color:red;   
-}
-.footer a:active{
-    color:white;   
 }
