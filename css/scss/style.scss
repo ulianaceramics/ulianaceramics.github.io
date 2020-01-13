@@ -1,0 +1,266 @@
+//variables
+$font-color:#FFFFFF;
+//Styles
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@import "./socialbuttons.css" screen;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration:none;
+  &:link, &:visited, &:hover, &:active {
+    color: $font-color}
+ }
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-rows: minmax(15vw, auto);
+
+}
+/* home button  */
+#up {
+    height: 50px;
+    overflow: hidden;
+    width: 30%;
+    position: absolute;
+    position: fixed;
+    right: -5%;
+    bottom: 10%;
+    z-index: 100000;
+}
+
+a.ddott {
+    margin:0 auto;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    width: 24%;
+    font-size: 1.2vw;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 100px 0 #FFF,1px 76px 10px #000;
+    color:$font-color;
+    background: rgba(0,0,0,0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+a.ddott:hover {
+    text-shadow: 0 50px 0 $font-color, 1px 51px 20px #FFF;
+    margin-top: -50px;
+    height: 100px;
+    background: #222;
+}
+/* header section  */
+.header {
+    background: url("../images/header.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    color: $font-color;
+    padding-bottom:20vw;
+}
+
+.logo {
+    text-align: left;
+    padding: 20px 20px 20px 50px;
+    font-size: 5vw;
+    width: 80%;
+}
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 100px;
+    font-size: 2.5vw;
+    margin-bottom: 10%;
+}
+
+.header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.header li {
+    margin: 0px 20px;
+    list-style-type: none;
+}
+.header a:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+/* paralax sections  */
+
+.paralax {
+    min-height: 30vw;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform:translatez(0);
+    -webkit-transform:translatez(0);
+}
+.one {
+    background-image: url(../images/paralaxone.jpg);
+} 
+.two {
+    background-image: url(../images/paralaxtwo.jpg);
+}
+
+/* about section  */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 5%;
+}
+.about>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size:2vw;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.about img {
+    width:80%;
+    height: auto;
+}
+.about h3 {
+    margin-bottom: 20px;
+}
+
+/* portfolio section  */
+.portfolio {
+    text-align: center;
+}
+.portfolio h1 {
+    margin: 30px 0px;
+    font-size:4vw;
+}
+.photos {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+    padding: 0px 10px;
+}
+.photos>a>img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.photos>a>img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+}
+/* contact section  */
+.contact {
+    padding-top: 20px;
+    text-align: center;
+    font-size:2vw;
+}
+.contact h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size:4vw;
+    
+}
+.contact p {
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+.contact-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+}
+.form div{
+    margin: 30px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.form .userInfo{
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.form .questionSend{
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.form textarea{
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+.form .button {
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    border: 1px solid none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1E62D0), to(#3D94F6));
+    background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+    border-radius: 40px 40px 40px 40px;
+    color: $font-color;
+    font-size: 2vw;
+}
+
+.button:hover {
+   -webkit-transform: scale(1.1);
+           transform: scale(1.1);
+   -webkit-transition: .5s ease-in-out;
+   transition: .5s ease-in-out;
+}
+
+input {
+    padding: 2vw 2vw 2vw 1vw;
+    margin-top: 2vw;
+    font-size: 1.5vw;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    color:$font-color;
+    font-size: 1vw;
+    background-color: rgb(108,75,30);
+    z-index: 1000;
+}
+.footer :nth-child(1) {
+    padding: 3px 0px;
+    font-size: 1.5vw;
+}
+.footer :nth-child(2) {
+    padding: 3px 0px;
+}
+.footer :nth-child(2) a {
+    font-size: 1vw;
+}
