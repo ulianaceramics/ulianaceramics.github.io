@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import "../css/socialbuttons.css" screen;
+@import "./socialbuttons.min.css" screen;
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +60,7 @@ a.ddott:hover {
 
 /* header section  */
 .header {
-  background: url("../images/header.jpg") no-repeat;
+  background: url("../images/header-min.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
@@ -124,11 +124,11 @@ nav {
 }
 
 .one {
-  background-image: url(../images/paralaxone.jpg);
+  background-image: url(../images/paralaxone-min.jpg);
 }
 
 .two {
-  background-image: url(../images/paralaxtwo.jpg);
+  background-image: url(../images/paralaxtwo-min.jpg);
 }
 
 /* about section  */
