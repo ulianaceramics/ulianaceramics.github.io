@@ -12,9 +12,30 @@ function sendForm() {
     let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=`;
 
     let xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+        let modalWindowContent = document.getElementById("modalWindowContent");
+        let modalWindow = document.getElementById("modalWindow");
+        if (this.readyState == 4 && this.status == 200) {
+            modalWindowContent.innerHTML = "The request was sent!";
+            modalWindow.style.display = "flex";
+            let buttoncloseCustomerAlert = document.getElementById('closemodalWindow');
+            buttoncloseCustomerAlert.addEventListener('click', closemodalAlertWindow);
+        } else {
+            modalWindow.style.display = "flex";
+            let buttoncloseCustomerAlert = document.getElementById('closemodalWindow');
+            buttoncloseCustomerAlert.addEventListener('click', closemodalAlertWindow);
+        }
+    };
     xhttp.open("GET", url + `Hello Ulyana, you have a new client. Name: ${name}, LastName: ${lastName}, Phone: ${phone}, Email: ${email}. His question is : "${userQuestion}" Please contact him.`, true);
     xhttp.send();
-}
+};
+
+// close modal window
+function closemodalAlertWindow() {
+    let modalWindow = document.getElementById("modalWindow");
+    modalWindow.style.display = "none";
+};
 
 // Smooth transition
 $(document).ready(function () {

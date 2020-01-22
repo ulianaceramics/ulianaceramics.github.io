@@ -77,16 +77,12 @@ a.ddott:hover {
 
 nav {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px 30px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   height: 100px;
@@ -96,7 +92,6 @@ nav {
 
 .header ul {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -140,12 +135,9 @@ nav {
 
 .about > div {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 2vw;
-  -ms-flex-item-align: center;
   align-self: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -216,21 +208,16 @@ nav {
 .form div {
   margin: 30px 0px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .form .userInfo {
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .form .questionSend {
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -284,4 +271,56 @@ input {
 
 .footer :nth-child(2) a {
   font-size: 1vw;
+}
+
+
+/* modal window */
+#modalWindow {
+  display: -webkit-box;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  position: fixed;
+  background-color: rgba(30,30,30, 0.7);
+  -webkit-box-pack: center;
+          justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  z-index: 10000000;
+  font-size: 2vw;
+  -webkit-transition: ease;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+#modalWindowBody {
+  display: block;
+  padding: 3% 2% 3% 2%;
+  text-align: center;
+  align-self: center;
+  width: 40%;
+  height: auto;
+  background-color: white;
+  position: relative;
+}
+
+#modalWindowContent{
+  margin: 2% 2% 4% 2%;
+}
+#closemodalWindow {
+  width: auto;
+  height: auto;
+  padding: 5px 10px 5px 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1E62D0), to(#3D94F6));
+  background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+  color: #FFFFFF;
+  font-size: 2vw;
+}
+
+#closemodalWindow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
