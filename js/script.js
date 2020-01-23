@@ -19,10 +19,21 @@ function sendForm() {
         if (this.readyState == 4 && this.status == 200) {
             modalWindowContent.innerHTML = "The request was sent!";
             modalWindow.style.display = "flex";
+            setTimeout(showModalWindow, 1000);
+            function showModalWindow() {
+                modalWindow.style.opacity = 1;
+            }
+            modalWindow.style.visibility = 'visible';
             let buttoncloseCustomerAlert = document.getElementById('closemodalWindow');
             buttoncloseCustomerAlert.addEventListener('click', closemodalAlertWindow);
         } else {
+            modalWindowContent.innerHTML = "The request was not sent! Please check your internet connection!";
             modalWindow.style.display = "flex";
+            setTimeout(showModalWindow, 1000);
+            function showModalWindow() {
+                modalWindow.style.opacity = 1;
+            }
+            modalWindow.style.visibility = 'visible';
             let buttoncloseCustomerAlert = document.getElementById('closemodalWindow');
             buttoncloseCustomerAlert.addEventListener('click', closemodalAlertWindow);
         }
@@ -34,7 +45,10 @@ function sendForm() {
 // close modal window
 function closemodalAlertWindow() {
     let modalWindow = document.getElementById("modalWindow");
+    modalWindowContent.innerHTML = "";
     modalWindow.style.display = "none";
+    modalWindow.style.opacity = 0;
+    modalWindow.style.visibility = 'hidden';
 };
 
 // Smooth transition
